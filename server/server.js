@@ -10,7 +10,7 @@ app.get('/index.html', (req, res) => {
   res.sendFile(__dirname+'/index.html')
 })
 app.get('/arts.html', (req, res) => {
-  res.sendFile(__dirname+'/soon.html')
+  res.sendFile(__dirname+'/arts.html')
 })
 app.get('/sports.html', (req, res) => {
   res.sendFile(__dirname+'/sports.html')

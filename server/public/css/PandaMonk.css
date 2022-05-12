@@ -1390,13 +1390,13 @@ a .blue1:hover
 .RedGradWrap
 {
 	position: relative;
-	background: url("../Assets/rec.png") repeat-x top center;
+	background: url("../Assets/sparkbanner.png") repeat-x top center;
 }
 @media screen and (max-width: 600px) {
 	.RedGradWrap
 	{
 		position: relative;
-		background: url("../Assets/rec.png") top center;
+		background: url("../Assets/sparkmobileversion.png") top center;
 		background-size: 60vh 60vh;
 	}
 }
@@ -1547,7 +1547,7 @@ background: url("../Assets/General/ExtraSmallLeftHand.png") no-repeat center cen
 	z-index: 4;	
 }
 #WorkColInner{
-	margin-left: 0px;
+	margin-left: 10px;
 }
 
 #LeftHand{
@@ -2469,6 +2469,10 @@ background-color: white;
 		height: 1100px;
 	}
 
+	.RedGradWrap{
+		height: 1100px;
+	}
+
 	#AboutHeaderWrapper{
 		/*margin-left: 20px !important;*/
 	}
@@ -2575,6 +2579,12 @@ background-color: white;
 		left: 0;
 	}
 
-
-
+}
+#WorkColInner{
+	padding-top: 20rem;
+}
+@media only screen and (max-width:600px){
+	#WorkColInner{
+		padding-top: 13rem;
+	}
 }
