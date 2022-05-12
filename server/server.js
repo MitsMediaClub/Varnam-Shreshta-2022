@@ -1,21 +1,25 @@
+var fs = require('fs');
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 80
-
 var https = require('https');
-
-var fs = require('fs');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:true}))
 
-var https_options = {
 
+var opt = {
+  
   key: fs.readFileSync(__dirname+"/public/ssl/key.pem"),
-
-  cert: fs.readFileSync(__dirname+"/public/ssl/cert.pem")
+  
+  cert: fs.readFileSync(__dirname+"/public/ssl/pem.cert")
 };
+
+var httpsServer = https.createServer(opt, app);
+
+httpsServer.listen(443, () =>{
+  console.log(`Example app listening on port 443`)
+});
 
 
 app.get('/', (req, res) => {
@@ -62,12 +66,3 @@ app.get('/Assets/Posters',(req,res)=>{
   })
   res.redirect('/admin.html')
 })
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
-
-https.createServer(https_options, function (req, res) {
-  res.writeHead(200);
-  res.end("hello world\n");
-}).listen(port);
