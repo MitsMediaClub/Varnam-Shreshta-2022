@@ -1,12 +1,21 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 80
+const port = 443
 
+var https = require('https');
 
+var fs = require('fs');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:true}))
+
+var https_options = {
+
+  key: fs.readFileSync(__dirname+"/public/ssl/infomits.crt"),
+
+  cert: fs.readFileSync(__dirname+"/public/ssl/infomits.key")
+};
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname+'/index.html')
