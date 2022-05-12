@@ -1,12 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 3000
+const port = 80
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:true}))
 
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(__dirname+'/index.html')
 })
 app.get('/arts.html', (req, res) => {
