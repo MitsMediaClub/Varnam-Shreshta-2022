@@ -12,7 +12,11 @@ var opt = {
   
   key: fs.readFileSync(__dirname+"/public/ssl/key.pem"),
   
-  cert: fs.readFileSync(__dirname+"/public/ssl/pem.cert")
+  cert: fs.readFileSync(__dirname+"/public/ssl/pem.cert"),
+  
+  ca: [
+    fs.readFileSync(__dirname+"/public/ssl/origin_ca_rsa_root.pem")
+  ]
 };
 
 var httpsServer = https.createServer(opt, app);
@@ -37,7 +41,7 @@ app.get('/contact.html', (req, res) => {
 app.get('/soon.html', (req, res) => {
   res.sendFile(__dirname+'/soon.html')
 })
-app.get('/admin.html', (req, res) => {
+app.get('/682308', (req, res) => {
   res.sendFile(__dirname+'/admin.html')
 })
 app.get('/Assets/Posters',(req,res)=>{
