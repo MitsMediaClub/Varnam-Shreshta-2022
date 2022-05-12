@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 443
+const port = 80
 
 var https = require('https');
 
@@ -12,10 +12,11 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 var https_options = {
 
-  key: fs.readFileSync(__dirname+"/public/ssl/infomits.crt"),
+  key: fs.readFileSync(__dirname+"/public/ssl/key.pem"),
 
-  cert: fs.readFileSync(__dirname+"/public/ssl/infomits.key")
+  cert: fs.readFileSync(__dirname+"/public/ssl/cert.pem")
 };
+
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname+'/index.html')
@@ -45,18 +46,18 @@ app.get('/Assets/Posters',(req,res)=>{
       if (err) throw err;
       res.send(files)
     }
-  );
-  
-})
-app.post('/score',(req,res)=>{
-  console.log(req.body)
-  const fs = require('fs')
-  const jsonString = JSON.stringify(req.body)
-  fs.writeFile(__dirname+'/public/scores.json', jsonString, err => {
-    if (err) {
-            console.log('Error writing file', err)
+    );
+    
+  })
+  app.post('/score',(req,res)=>{
+    console.log(req.body)
+    const fs = require('fs')
+    const jsonString = JSON.stringify(req.body)
+    fs.writeFile(__dirname+'/public/scores.json', jsonString, err => {
+      if (err) {
+        console.log('Error writing file', err)
     } else {
-            console.log('Successfully wrote file')
+      console.log('Successfully wrote file')
     }
   })
   res.redirect('/admin.html')
@@ -65,3 +66,8 @@ app.post('/score',(req,res)=>{
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
+https.createServer(https_options, function (req, res) {
+  res.writeHead(200);
+  res.end("hello world\n");
+}).listen(port);
