@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114303539-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114303539-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PH43T2Q');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <title>MITS Arts and Sports</title>
+  <link rel="shortcut icon" href="/Assets/mediaclub.ico" type="image/x-icon">
+  <meta property="og:image" content="//pandamonk.studio/newweb/pandamonk.png">
+  <meta property="og:image:width" content="1376">
+  <meta property="og:image:height" content="1032">
+  <meta property="og:title" content="> Panda Monk - Design and development studio | Zagreb">
+  <meta property="og:description" name="description"
+    content="
+    Hello Mitsians, We're here for the information of MITS">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="Layout/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css"
+    href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineLite.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="JSLIBS/ScrollMagic/animation.gsap.min.js"></script>
+  <script src="JSLIBS/ScrollMagic/debug.addIndicators.min.js"></script>
+
+  <script src="JSLIBS/gsap/TimelineLite.min.js"></script>
+  <script src="JSLIBS/barba/barba.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="JSLIBS/lity.min.css">
+  <script src="JSLIBS/lity.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/PandaMonk.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+      <!-- <script src="jquery.scrolldepth.js"></script> -->
+
+      <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+</head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PH43T2Q" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="LoadingScreen">
+    <div id='pandaLoadGif'></div>
+  </div>
+
+  <div id='DesktopNavigacijaCont' class="notOnSmall">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-2 col-md-2  col-sm-2" style="text-align: center;">
+          <a href="soon.html">
+            <div class="backToWorkBtt"></div>
+          </a>
+
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 hiddenOverflow" style="text-align: left;">
+          <a href="index.html">
+            <div id='HomeBtt' class="navBTT">HOME</div>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 hiddenOverflow" style="text-align: left;">
+          <a href="soon.html">
+            <div id='WorkBtt' class="navBTT">ARTS</div>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hiddenOverflow" style="text-align: left;">
+          <a href="sports.html">
+            <div id='ContactBtt' class="navBTT">SPORTS</div>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2 hiddenOverflow" style="text-align: left;">
+          <a href="contact.html">
+            <div id='AboutBtt' class="navBTT">CONTACT US</div>
+          </a>
+        </div>
+        <div style="height: 10px;"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2 notOnSmall" style="text-align: center;">
+          <div id='mainPandaLogo' class='pandaLogo'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="NavMobile" class="onlyMobile">
+    <div id="MENU" class="navCircle">MENU</div>
+  </div>
+
+  <div id="NavigacijaMobExpanded">
+    <div id="NavigacijaMobCont">
+      <a href="index.html">
+        <div id="HomeMobBtt" class="navCircleMob noselect">HOME</div>
+      </a>
+      <a href="soon.html">
+        <div id="AboutMobBtt" class="navCircleMob noselect">ARTS</div>
+      </a>
+      <a href="sports.html">
+        <div id="WorkMobBtt" class="navCircleMob noselect">SPORTS</div>
+      </a>
+      <a href="contact.html">
+        <div id="ContactMobBtt" class="navCircleMob noselect">CONTACT</div>
+      </a>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid loaderCont fixedCont">
+            <div class="row loaderCont" style="margin-left: -15px !important;margin-right: -15px !important;">
+                  <div class="col-lg-2 col-md-2  col-sm-3 loaderCont">
+                      <div id="LoaderBlack1" class="blackBar"></div>                  
+                  </div>
+                  <div class="col-lg-2 col-md-2  col-sm-3 loaderCont">
+                      <div id="LoaderBlack2" class="blackBar"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2  col-sm-3 loaderCont">
+                      <div id="LoaderBlack3" class="blackBar"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2  col-sm-3 loaderCont">
+                      <div id="LoaderBlack4" class="blackBar"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2  col-sm-3 loaderCont">
+                      <div id="LoaderBlack5" class="blackBar"></div>
+                  </div>
+                  <div class="col-lg-2 col-md-2  col-sm-3 loaderCont">
+                      <div id="LoaderBlack6" class="blackBar"></div>
+                  </div>
+            </div>
+  </div>
+
+
+  <div class="container-fluid specRow fixedCont">
+            <div class="row specRow" style="margin-left: -15px !important;margin-right: -15px !important;">
+                  <div class="col-lg-2 col-md-2  col-sm-3 specRow">                    
+                  </div>
+
+      <div class="col-lg-2 col-md-2  col-sm-3 specRow">
+      </div>
+
+      <div class="col-lg-2 col-md-2  col-sm-3 specRow"></div>
+      <div class="col-lg-2 col-md-2  col-sm-3 specRow"></div>
+      <div class="col-lg-2 col-md-2  col-sm-3 specRow"></div>
+      <div class="col-lg-2 col-md-2  col-sm-3 specRow"></div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+
+  </script>
+  <div id="socialMenu">
+    <a style="margin-left: 9px;" class="socialIcons" href="https://www.instagram.com/mits_sports/" target="_blank"><img
+        src="Assets/sparklogo.png" alt="Twitter" height="45" width="45" style="margin-right: 45px;">
+    </a>
+    <a class="socialIcons" href="https://www.instagram.com/infomits/" target="_blank"><img src="Assets/varnamlogo.png"
+        alt="Behance" height="45" width="45"></a>
+  </div>
+
+  <div id="barba-wrapper">
+    <div class="barba-container" data-namespace="homepage">
+      <div id="awwarded"
+        style="position: absolute; background: url('MITSLOGO.jpeg') no-repeat center; width: 100%; height: 100px; margin-top: 40px; ">
+      </div>
+      <div id="HomeTrigger" style="margin-top: 25px; position: absolute;"></div>
+      <div id='MainCont' class=" topPagePadding" style="overflow-x: hidden;">
+
+
+
+        <div class="row ">
+          <div class="col-lg-2 col-md-2  col-sm-3" style="text-align: center;">
+
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 " style="text-align: left;"> </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 " style="text-align: left;"> </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 " style="text-align: left;"> </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 " style="text-align: left;"> </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 " style="text-align: left;"> </div>
+        </div>
+
+
+
+        <div class="row ">
+
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="text-align: center;">
+            <div class='pandaLogo onlyMobile' style="margin-top: 140px;"></div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6  col-sm-6 col-xs-12 alignOnMobile" style="text-align: center;">
+            <div id="pandaBot">
+              <img style="width: 100%;" src="./Assets/mascot.png" alt="">
+            </div>
+          </div>
+
+          <div id="homeNaslov1" class="col-lg-2 col-md-4 col-sm-4 col-xs-12 alignOnMobile header"
+            style="margin-top: 0px; margin-left: 200px; text-align: left;">
+            <div class="MediumNaslov">THE</div>
+            <div id="" class="VelikiNaslov">COMPLETE</br></div>
+            <div id="" class="VelikiNaslov" style="padding-top: 10px;"> <span
+                style="background-color: #3ad1c3; color: white; padding-left: 10px; padding-right: 10px;">EXTRAVAGANZA</span>
+            </div>
+            <div id="" class="breakLine"
+              style="background-position:  left center; max-width: 80%; padding-top: 25px;padding-bottom: 0;"></div>
+            <div id="" class='smallTekst' style="padding-left: 0px; padding-right: 20px; font-size: 18px;">Hello and
+              welcome to the spectacular celebrations of Muthoot Institute of Technology and Science. MITS is
+              celebrating Sports and Arts fest on 6th, 13th and 14th of May. To encourage, uplift and motivate the
+              students to cultivate their skills and talents.</div>
+          </div>
+
+          <!-- <div id="homeNaslov6"" class="col-lg-2 col-md-4 col-sm-4 notOnMedium" style="text-align: left; padding-right: 30px;"> 
+                          <div class='smallNaslov'><b>MORE ABOUT US</b></div>
+                          <a id='ServicesCall' href="contact.html"> <div class="slimBTT">OUR SERVICES</div></a>
+                            <a id='ApproachCall' href="contact.html"> <div class="slimBTT">OUR APPROACH</div></a>
+                            <div class="breakLine" style="background-position:  left center; max-width: 90%;"></div>
+                          
+
+                            <div class='smallNaslov'><b>RECENT PROJECTS</b></div>
+                            <div id="scrollToBMW" class="slimBTT scrollTolink">BMW X1 SALE CAMPAIGN</div>
+                            <div id="scrollToTcom" class="slimBTT scrollTolink">T-COM CHRISTMAS STORY</div>                  
+                            <div id="scrollToBanner" class="slimBTT scrollTolink">BANNER SHOWREEL</div></br></br>
+                            <a href="soon.html"> <div class="slimBTT">MORE ></div></a>
+                       </div>
+                      <div class="col-lg-2 col-md-2 col-sm-2" style="text-align: center;"> </div> -->
+
+          <!-- 
+
+                      <div class="col-lg-2 col-md-2 col-sm-3 " style="text-align: left; padding-right: 30px;">
+                            <div class='smallNaslov'><b>MORE ABOUT US</b></div>
+                            <div class="slimBTT">OUR SCOPE OF WORK</div>
+                            <div class="slimBTT">OUR APPROACH</div>
+                            <div class="slimBTT">OUR PROCESS</div>
+
+                      </div>
+
+                      <div class="col-lg-2 col-md-2 col-sm-3 " style="text-align: left; padding-right: 30px;">
+                          <div class='smallNaslov'><b>GET IN TOUCH</b></div>
+                          <div class="slimBTT">CONTACT</div>awar
+                          
+                      </div> -->
+
+
+        </div>
+
+                <!-- <div class="row EmptyRowSpace140"></div> -->
+                <!-- <div class="row EmptyRowSpace140" style="margin-bottom: 0px;"></div> -->
+
+                <div id="sb_trigger" class="row EmptyRowSpace140" style="margin-bottom: 0px;"></div>
+    
+                <div class="sb-align">
+                  <div class="scoreboard-top col-lg-10 col-md-8 col-sm-12 col-xs-12">
+                    <div class="breakLine centerBackground" style="width: 100%;"></div>                  
+                    <div class="VelikiNaslov" style="text-align: center;"><span id="sb_naslov1">SCOREBOARD</br></span><span id="sb_naslov2"></span></div>
+                    <div class="breakLine centerBackground" style="width: 100%;"></div>  
+                    <div class="scoreboard d-flex  col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="house col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                        <div class="house-head" style="background: #ff3e3edb;">
+                          <p>RED</p>
+                        </div>
+                        <div class="house-score" style="text-align: center;">
+                          <p class="red"></p>
+                        </div>
+                      </div>
+                      <div class="house col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                        <div class="house-head" style="background:#169116c7">
+                          <p>GREEN</p>
+                        </div>
+                        <div class="house-score">
+                          <p class="green"></p>
+                        </div>
+                      </div>
+                      <div class="house col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                        <div class="house-head" style="background: #dddd3ade;">
+                          <p>YELLOW</p>
+                        </div>
+                        <div class="house-score">
+                          <p class="yellow"></p>
+                        </div>
+                      </div>
+                      <div class="house col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                        <div class="house-head" style="background: #1507b5c9;">
+                          <p>BLUE</p>
+                        </div>
+                        <div class="house-score">
+                          <p class="blue"></p>
+                        </div>
+                      </div>
+
+                      <script type="text/javascript">
+
+                      var myLink = document.getElementById('mylink');
+
+                      myLink.onclick = function(){
+
+                          var script = document.createElement("script");
+                          script.type = "text/javascript";
+                          script.src = "fetchlive.js"; 
+                          document.getElementsByTagName("head")[0].appendChild(script);
+                          return false;
+
+                      }
+
+
+                      </script>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="RecentCasesWrapper" style="margin-bottom: 80px;">
+          <div id="recentCase" style="margin-top: 0px;"></div>
+          <div id='RecentCasesBlackCont'>
+
+
+            <div id="rukaMidLijeva"></div>>
+            <div id="rukaMidDesna"></div>
+
+            <div id="RecentNaslov" class="recentNaslov">OUR EVENTS</div>
+
+          </div>>
+
+        </div>
+
+
+
+        <!--
+                <div class="row bigBlackRow">
+                      
+                      
+                      <div class="col-lg-12" style="text-align: center; position: relative; height: 420px;">
+                            <div id='someOfOur' class="BlackBarNaslov VelikiNaslov" style="color: white; font-size: 80px; margin-top: 170px;">YOUR <span style="color: #e31d65">PROJECT,</span> OUR CHALLENGE</div>
+
+                            <div id='CheckOut' class="BlackBarNaslov VelikiNaslov" style="color: white; font-size: 36px; margin-top: 110px;">CHECK OUT SOME</span></div>
+
+
+                            <div id="recentCasesCopy" class="BlackBarNaslov VelikiNaslov" style="color: white; font-size: 120px; line-height: 100px; margin-top: 490px;">RECENT <span style="color: #e31d65">CASES</span></br>
+                              
+                            </div>77777
+                            <div id="arrowBottom" class="BlackBarNaslov VelikiNaslov hideOnMobile" style="opacity: 1, color: white; font-size: 120px; line-height: 100px; margin-top: 280px;">
+                                <img src="Assets/General/DownArrow.png">
+                            </div>
+                      </div>
+                      
+                </div>
+
+                -->
+
+
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="container-fluid">
+
+              <div class="row LargeImageRow" id='BMWCaseStart'>
+
+
+                <div id="trigger2" style="margin-top:100px; position: absolute;"></div>
+
+                <div id="BMWLarge" class="caseContFrontpage" style="overflow: hidden; position: relative;">
+
+
+                  <div id="redOverlay01" class="redOverlay"></div>
+
+                </div>
+              </div>
+            </div>
+            </a>
+
+
+            <div class="row" style="text-align: center; position: relative;">
+              <div id="case1" class="caseCircle">SECTION</br>1/3</div>
+            </div>
+
+            <div class="row" style="margin-top: -70px;">
+              <!-- bmw  Row -->
+
+
+              <div class="col-lg-2 col-md-2  col-sm-0 " style="text-align: left;">
+
+
+
+              </div>
+
+              <div class="col-lg-8 col-md-8  col-sm-12" style="text-align: center; overflow: visible;">
+                <div id="trigger3" style="margin-top: 100px; position: absolute;"></div>
+
+
+
+                <div class="breakLine centerBackground"></div>
+
+                <div class="VelikiNaslov"><span id="bmw_naslov1">VARNAM 2022</span></br><span id="bmw_naslov2"></span>
+                </div>
+                <div id="bmw_naslov0" class="MediumNaslov">----------</div>
+                <div class="breakLine centerBackground"></div>
+
+              </div>
+              <div class="row">
+                <!-- BAJKA Second Row -->
+
+
+                <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12 alignOnMobile" style="text-align: left;">
+
+                  <div style="float: right;" class='CanclefloatOnMobile'>
+                    <div class='smallNaslov'><b>OUR AIM</b></div>
+                    <div class='smallTekst'>Varnam'22 is focusing on developing and helping the students showcase their talents through various artistic forms and events conducted on the day. Students develop much unity and benevolence among teams and join together towards the successful festivity of Arts fest.</div>
+                  </div>
+
+
+                </div>
+
+                <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12 alignOnMobile" style="text-align: left;">
+
+                  <div class='smallNaslov'><b>OUR SCOPE</b></div>
+                  <div class='smallTekst'> Varnam 2022 aims at nurturing the biennial and artistic talents among students. Varnam organizes events at the inter-college level, providing on more opportunities and platforms for the students to nourish and sharpen their inner talents and taste in arts.</div>
+
+
+                </div>
+
+              </div> <!-- END BAJKA Second Row -->
+
+
+              <div class="col-lg-2 col-md-2  col-sm-0 " style="text-align: left;"></div>
+
+
+            </div> <!-- END BMW X1 Row -->
+
+            <div class="row  events-top" id='BMWSecondRow'>
+              <!-- BMW Second Row -->
+
+
+
+
+
+
+
+
+            </div> <!-- END BMW Second Row -->
+
+            <div class="row" style="text-align: center;">
+              <div class="breakLine centerBackground"></div>
+              <!-- <a class="" href="https://www.youtube.com/watch?v=4I22c5xJH3c" data-lity> <div class="slimBTT videoClick"  id='HOMEPAGE - BMW VIDEO'  style="text-align: center; opacity: 1; margin-top: 30px;">WATCH VIDEO <span class="glyphicon glyphicon-play"></span></div>     </a>
+                                        <a href="BMWX1.html"> <div class="redBTT" style="opacity: 1; margin-top: 30px;">SEE FULL CASE</div>   </a>  
+                                        
+                                        <div id="arrowToNext" class="BlackBarNaslov VelikiNaslov arrowBlack" style="margin-top: 80px;">
+                                                    
+                                        </div> -->
+
+
+            </div>
+            <div class="row EmptyRowSpace140" style="margin-bottom: 20px;"></div>
+
+
+
+
+          </div> <!-- END LEFT NESTED BMW CONTAINER FLUID -->
+          <div class="col-lg-6 LGreyCaseBG">
+            <div class="container-fluid ">
+
+              <div class="row" id='TcomCaseStart'>
+
+                <div id="BajkaTrigger" style="margin-top:100px; position: absolute;;"></div>
+                <div id="BajkaLarge" class="caseContFrontpage" style="overflow: hidden; position: relative;">
+                  <div id="redOverlay02" class="redOverlay"></div>
+
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="row" style="text-align: center; position: relative;">
+
+              <div id="case2" class="caseCircle">SECTION</br>2/3</div>
+            </div>
+
+            <div class="row" style="margin-top: -70px;">
+              <!-- BAJKA  Row -->
+              <div class="col-lg-2 col-md-2  col-sm-0 " style="text-align: center;">
+
+              </div>
+
+
+              <div class="col-lg-8 col-md-8  col-sm-12 " style="text-align: center; overflow: visible;">
+                <div id="BajkaNaslovTrigger" style="margin-top: 100px; position: absolute;"></div>
+                <div class="breakLine centerBackground"></div>
+                <div class="VelikiNaslov"><span id="bajka_naslov1">SPARK 2022</br></span><span
+                    id="bajka_naslov2"></span></div>
+                <div id="bajka_naslov0" class="MediumNaslov">----------</div>
+                <div class="breakLine centerBackground"></div>
+              </div>
+              <div class="col-lg-2 col-md-2  col-sm-0 " style="text-align: center;">
+
+              </div>
+
+
+
+            </div> <!-- END BAJKA Row -->
+
+
+            <div class="row">
+              <!-- BAJKA Second Row -->
+
+
+              <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12 alignOnMobile" style="text-align: left;">
+
+                <div style="float: right;" class='CanclefloatOnMobile'>
+                  <div class='smallNaslov'><b>OUR AIM</b></div>
+                  <div class='smallTekst'>Spark 2022 is the sports festival conducted at intercollegiate level of MITS. It provides platform for students to give their best shot through various sport events organized.</div>
+                </div>
+
+
+              </div>
+
+              <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12 alignOnMobile" style="text-align: left;">
+
+                <div class='smallNaslov'><b>OUR SCOPE</b></div>
+                <div class='smallTekst'> Spark'22 enables the students forward to unity, leadership and teamwork that maintains great solemnity, that helps the students focus on the physical and mental health contributing towards a successful event.</div>
+
+
+              </div>
+
+            </div> <!-- END BAJKA Second Row -->
+
+            <div class="row" style="text-align: center;">
+              <div class="breakLine centerBackground"></div>
+              <!-- <a  class="" href="https://www.youtube.com/watch?v=qMh_bRv9SUs" data-lity> <div id='HOMEPAGE - TCom Bajka Video' class="slimBTT videoClick" style="text-align: center;  opacity: 1; margin-top: 30px;">WATCH VIDEO <span class="glyphicon glyphicon-play"></span></div>     </a>     
+                                            <a href="ChristmasStory.html"><div class="redBTT" style="opacity: 1; margin-top: 30px;">SEE FULL CASE</div>    </a>
+
+                                          <div id="arrowToNext" class="BlackBarNaslov VelikiNaslov arrowBlack" style="margin-top: 90px;">
+                                                        
+                                          </div>  -->
+            </div>
+
+            <div class="row EmptyRowSpace140" style="margin-bottom: 20px;"></div>
+
+
+          </div> <!-- END NESTED TCOM CONTAINER -->
+
+        </div> <!-- END HALF PAGE COLUMN -->
+
+
+      </div> <!-- END LEFT COL -->
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+<!-- 
+    <div class="row" id='BannerCaseStart'>
+      <div id="BannerTrigger" style="margin-top: 0px; position: absolute;"></div>
+      <div id="BannerLarge"></div>
+    </div> -->
+
+
+
+    <div class="row">
+      <!-- BANNER  Row -->
+
+      <div class="col-lg-1 col-md-2  col-sm-0" style="text-align: left;">
+
+
+      </div>
+
+      <div class="col-lg-10 col-md-8  col-sm-12 " style="text-align: center; overflow: visible;">
+        <div id="case3" class="caseCircle">SECTION</br>3/3</div>
+        <div class="breakLine centerBackground"></div>
+        <div class="VelikiNaslov"><span id="banner_naslov1">GALLERY</br></span><span id="banner_naslov2"></span></div>
+        <!-- <div id="banner_naslov0" class="MediumNaslov">WHEN TO GO, WHERE TO GO</div> -->
+        <div class="breakLine centerBackground"></div>
+        <div class="slider slide">
+          <!-- Indicators -->
+
+          <div class="slider-inner">
+            
+          </div>
+
+          <!-- Controls -->
+          <a class="left slider-control" onclick="slidePrev()">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right slider-control" onclick="slideNext()">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-1 col-md-12  col-sm-0 " style="text-align: left;"></div>
+
+    </div> <!-- END BANNER Row -->
+
+
+    <div class="events-row">
+      <!-- BANNER Second Row -->
+
+      <div class="col-lg-2 col-md-2  col-sm-0 alignOnMobile" style="text-align: left;"></div>
+
+
+
+      <!-- <button type="button" class="event-click" data-toggle="modal" data-target="#largeShoes">
+                          
+                      </button>
+                      
+                      <div class="modal fade" id="largeShoes" tabindex="-1" role="dialog" aria-labelledby="modalLabelLarge" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          
+                          <div id="pandaHeadTip"></div>
+                          <div id="RightHand" class="event-robo-hand"></div>
+                          <div id="LeftHand" class="event-robo-hand"></div>
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                              <h1 class="modal-title" id="modalLabelLarge"> Essay Writing ( English)</h1>
+                            </div>
+                            
+                            <div class="modal-body">
+                              <div class="event-date">10:15 AM - 10:55 AM | 2 May 2022 (Monday)</div>
+                              <div class="event-det">
+                                <p class="det-head">Individual/ Group :</p>
+                                <p>Individual</p>
+                              </div>
+                              <div class="event-det">
+                                <p class="det-head">No. of participants per House :</p>
+                                <p>Individual</p>
+                              </div>
+                              <div class="event-det">
+                                <p class="det-head">Individual/ Group:</p>
+                                <p>4</p>
+                              </div>
+                              <div class="event-det">
+                                <p class="det-head">Venue :</p>
+                                <p></p>
+                              </div>
+                              <div class="event-det">
+                                <p class="det-head">Judging Criteria :</p>
+                                <p>Development of theme, Composition, Appropriateness of
+                                  language and style, originality and general impression</p>
+                              </div>
+                              <div class="event-det">
+                                <p class="det-head">Individual/ Group:</p>
+                                <p>Individual</p>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div> -->
+
+
+
+    </div>
+    <!-- END 2ND BANNER Row -->
+
+
+
+
+
+  </div> <!-- END BMW Second Row -->
+  <!-- <a  href="https://www.youtube.com/watch?v=3U8iiF0ld-4" data-lity><div id='HOMEPAGE - BANNER VIDEO' class=" redBTT videoClick" style="text-align: center; opacity: 1; margin-top: 30px;">DOWNLOAD SCHEDULE <span class="glyphicon glyphicon-download-alt"></span></div></a>      -->
+
+  </div>
+
+
+  <div class="row EmptyRowSpace140">
+
+  </div>
+
+
+  <div class="row bigBlackRow" style="position: relative;">
+
+    <div id='BlockScreenCont'>
+      <div id='leftBlockLastCall' class="leftBlock">
+
+        <div id="headlineBlackBlock" class="mediumMobileFont">WE'D LOVE TO</br><span style="color: #e31d65">WHAT
+            MATT</span></div>
+      </div>
+      <div id='rightBlockLastCall' class="rightBlock">
+
+
+        <div id="headlineBlackBlockRight" class="mediumMobileFont">&nbsp;HEAR ABOUT</br><span style="color: #e31d65">ERS
+            TO YOU</span></div>
+      </div>
+
+    </div>
+
+    <div id="UnderScreenCont">
+      <div id="getInTouch" class="BlackBarNaslov VelikiNaslov"
+        style="margin-bottom:0px; height: 100px; text-align: center; color: white; font-size: 80px; margin-top: 480px; display: inline-block;">
+        <a href="contact.html" class='footerHover red1'>GET IN TOUCH
+
+          <div id='TouchUnderline' class='underline'
+            style="width: 295px; height: 8px; left:0; right:0; margin: auto; top:90px; background-color: #e31d65; display: inline-block; position: absolute; clear:both;">
+          </div>
+        </a>
+      </div>
+      <div id='MoreAbout' class="BlackBarNaslov VelikiNaslov"
+        style="color: white; text-align: center; font-size: 36px; margin-top: 270px;">FOR<a href="contact.html"
+          class='footerHover blue1'> ENQUIRIES</a></div>
+      <!-- <div id='MoreWorks' class="BlackBarNaslov VelikiNaslov" style="color: white; text-align: center;  font-size: 36px; margin-top: 310px;">OR<a href="soon.html" class='footerHover blue1'> DOUBTS  </a></div>  	 -->
+
+    </div>
+    <!-- 
+                      
+                      <div class="col-lg-12" style="text-align: center; position: relative; height: 500px;">
+                             
+                             <div id='whatMatter' class="BlackBarNaslov VelikiNaslov" style="color: white; font-size: 80px; margin-top: 130px;">WE'D LOVE TO HEAR ABOUT  <span style="color: #e31d65">WHAT MATTERS TO YOU.</span></div>
+
+                            <div id="getInTouch" class="BlackBarNaslov VelikiNaslov" style="height: 100px; color: white; font-size: 120px; margin-top: 480px; display: inline-block;"><span style="color: #6abbff">GET IN TOUCH 
+                                </span>
+                                 <div id='TouchUnderline' style="width: 440px; height: 8px; left:0; right:0; margin: auto; top:90px; background-color: #6abbff; display: inline-block; position: absolute; clear:both;"></div> 
+                            </div>    
+
+                            <div id='MoreAbout' class="BlackBarNaslov VelikiNaslov" style="color: white; font-size: 36px; margin-top: 270px;">OR, FIND OUT MORE<span style="color: #e31d65"> ABOUT US</span></div>
+                            <div id='MoreWorks' class="BlackBarNaslov VelikiNaslov" style="color: white; font-size: 36px; margin-top: 310px;">OOOR, SEE MORE <span style="color: #e31d65"> PROJECTS</span></div>                                              
+
+                      </div>
+                      -->
+
+  </div>
+
+
+
+
+
+  <div id='footerContainer' class="FooterDetect">
+
+    <div id="lastCallTrigger" style="margin-top: 0px; position: absolute;"></div>
+  </div>
+</div>
+
+<script src="JS/scrollConstructer.js"></script>
+<script src="JS/pageloadin.js"></script>
+</div>
+</div>
+    
+    <script type="text/javascript">
+          var totalCount;
+          var children;
+          var count = 0
+          var prev;
+          var next;
+
+        $( document ).ready(function() {
+
+          
+          MainInitAllPagesInit();
+          constructPersistentScroller();
+          constructPandaFooterScroller();
+          constructHomeScroller();
+          // PageLoader();
+          FadeInLoader();
+          constructWorkNavigaton();
+
+          
+          function setVal(){
+            totalCount = document.getElementsByClassName('slider-inner')[0].childElementCount
+            children = document.getElementsByClassName('slider-inner')[0].children
+            prev = totalCount-1
+            next = count+1
+            applyClass()
+          }
+          var folder = "Assets/Posters/"; //TODO: change this to the path to your folder with the images.
+          $.ajax({
+              url: folder,
+              success: function(data) {
+                data.shift(0)
+                data.map(val=>$(".slider-inner").append("<div class='item'><img src='"+folder+val + "'></div>"))
+                setVal();
+              }
+          });
+          $.getJSON('scores.json',function(obj){
+            $('.red').text(obj.red)
+            $('.green').text(obj.green)
+            $('.yellow').text(obj.yellow)
+            $('.blue').text(obj.blue)
+          })
+
+        
+
+          
+        
+        }); // END DOC READY
+
+        // $('.add-icon').click(function(){
+          //   $('.plus-icon').toggleClass('plus-icon-back')
+          
+        // })
+        function slideNext(){
+            removeClass()
+            count++
+            prev++
+            next++
+            if(prev>=totalCount){
+              prev=0
+            }
+            if(next>=totalCount){
+              next=0
+            }
+            if(count>=totalCount){
+              count=0
+            }
+            applyClass()
+          }
+          function slidePrev(){
+            removeClass()
+            count--
+            prev--
+            next--
+            if(prev<0){
+              prev=totalCount-1
+            }
+            if(next<0){
+              next=totalCount-1
+            }
+            if(count<0){
+              count=totalCount-1
+            }
+            applyClass()
+          }
+          function removeClass(){
+            children.item(count).classList.remove('active')
+            children.item(prev).classList.remove('prev')
+            children.item(next).classList.remove('next')
+          }
+          function applyClass(){
+            children.item(count).classList.add('active')
+            children.item(prev).classList.add('prev')
+            children.item(next).classList.add('next')
+          }
+        
+
+    </script>
+         
+    <script src="JS/navigacija.js"></script> 
+
+  </body>
+
+</html>

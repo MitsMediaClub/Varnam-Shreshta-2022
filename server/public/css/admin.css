@@ -1,0 +1,27 @@
+html{
+    background-color: #fbfbfb
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('/Assets/Fonts/FuturaLT-Bold.ttf');
+}
+label{
+    font-size: xx-large;
+    font-family: oswald;
+}
+#redtxt{
+    color: red;
+    background-color: white;
+}
+#bluetxt{
+    color: blue;
+    background-color: white;
+}
+#greentxt{
+    color: green;
+    background-color: white;
+}
+#yellowtxt{
+    color: #e1e153;
+    background-color: white;
+}

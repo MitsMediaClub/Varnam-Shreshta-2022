@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="/Assets/mediaclub.ico" type="image/x-icon">
+<link rel="stylesheet" href="admin.css">
+
+
+<html>
+    <form id="scores" action="/score" method="POST">
+        <label id="redtxt">Red :</label><br>
+        <input name="red" type="text" id="red"><br>
+
+        <label  id="bluetxt">Blue :</label><br>
+        <input name="blue" type="text" id="blue"><br>
+
+        <label id="greentxt">Green:</label><br>
+        <input name="green" type="text" id="green"><br>
+
+        <label id="yellowtxt">Yellow:</label><br>
+        <input name="yellow" type="text" id="yellow"><br>
+				<div>
+					<br>
+					<button style="font-size: xx-large;" type="submit" id="btn">Submit Latest Score</button>
+				</div>
+    </form>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="JS/scores.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+          var red = document.getElementById('red').value;
+          var blue = document.getElementById("blue").value;
+          var green = document.getElementById("green").value;
+          var yellow = document.getElementById("yellow").value;
+        
+        	var obj = {
+        	    "red": red,
+        	    "blue": blue,
+        	    "green": green,
+        	    "yellow": yellow
+        	};
+					 fetch('https://localhost:3000/score', {
+						method: 'POST',
+						headers: {
+							'Accept': 'application/json',
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({a: 1, b: 'Textual content'})
+					});
+        }
+
+
+    </script>
+</html>
